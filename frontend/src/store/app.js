@@ -37,7 +37,7 @@ export const useAppStore = defineStore("app", {
     serverStatus: false,
     configs: {},
     // apiserver: "http://62.72.29.171:3001/",
-    apiserver: `${import.meta.env.VITE_API_SERVER}:${import.meta.env.VITE_API_SERVER_PORT}/`,
+    apiserver: `http://${import.meta.env.VITE_API_SERVER}:${import.meta.env.VITE_API_SERVER_PORT}/`,
   }),
   persist: {
     pick: ["session", "configs"],

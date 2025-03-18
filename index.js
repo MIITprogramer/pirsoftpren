@@ -51,6 +51,6 @@ frontend.get("*", (req, res) => {
 
 
 // Jalankan server
-server.listen(PORT, '192.168.1.188', () => {
-  console.log(`Server berjalan di http://192.168.1.188:${PORT}`);
+server.listen(PORT, process.env.LOCAL_SERVER_IP, () => {
+  console.log(`Server berjalan di http://${process.env.LOCAL_SERVER_IP}:${PORT}`);
 });
